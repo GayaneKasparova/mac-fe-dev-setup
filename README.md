@@ -49,7 +49,6 @@ Optimized for **Apple Silicon** (M1–M4) and ideal for working with **React**, 
 - **Warp** – Modern, GPU-accelerated terminal
 - **Rectangle** – Window snapping and layout manager
 - **Shottr** – Fast and powerful screenshot tool
-- **LastPass** – Secure password manager
 
 ### 📬 Productivity & Communication
 - **Slack** – Team messaging and collaboration
