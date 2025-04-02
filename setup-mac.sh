@@ -32,7 +32,6 @@ brew install --cask \
   whatsapp \
   telegram\
   spotify \
-  lastpass \
   shottr \
   slack \
   docker
