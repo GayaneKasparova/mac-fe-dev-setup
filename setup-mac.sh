@@ -2,14 +2,6 @@
 
 echo "🛠 Setting up your Mac dev environment..."
 
-# Install Rosetta (required for Intel-based apps like LastPass)
-if /usr/bin/pgrep oahd >/dev/null 2>&1; then
-  echo "📦 Rosetta already installed."
-else
-  echo "📦 Installing Rosetta 2..."
-  /usr/sbin/softwareupdate --install-rosetta --agree-to-license
-fi
-
 # Install Homebrew
 if ! command -v brew &> /dev/null; then
   echo "🍺 Installing Homebrew..."
