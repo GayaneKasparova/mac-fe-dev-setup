@@ -13,7 +13,7 @@ fi
 # Install core CLI tools
 brew install git node nvm yarn pnpm zsh gh pgcli
 
-# Install GUI apps (skip if already present)
+# Install GUI apps
 brew install --cask \
   webstorm \
   visual-studio-code \
@@ -36,17 +36,14 @@ brew install --cask \
   slack \
   docker
 
-# Set PNPM global binary path
-echo '
-# pnpm
-export PNPM_HOME="$HOME/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-' >> ~/.zshrc
+# Set PNPM global binary path in .zshrc if not already present
+grep -qxF 'export PNPM_HOME="$HOME/Library/pnpm"' ~/.zshrc || echo 'export PNPM_HOME="$HOME/Library/pnpm"' >> ~/.zshrc
+grep -qxF 'export PATH="$PNPM_HOME:$PATH"' ~/.zshrc || echo 'export PATH="$PNPM_HOME:$PATH"' >> ~/.zshrc
 
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
-# Global JS tooling
+# Install global JS tooling
 pnpm add -g \
   @angular/cli \
   graphql \
@@ -58,18 +55,13 @@ pnpm add -g \
   pm2 \
   prisma
 
-# Update .zshrc with aliases and NVM config
-echo '
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+# Safely add NVM setup and aliases to .zshrc
+grep -qxF 'export NVM_DIR="$HOME/.nvm"' ~/.zshrc || echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
+grep -qxF '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"' ~/.zshrc || echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"' >> ~/.zshrc
+grep -qxF 'alias ws="webstorm ."' ~/.zshrc || echo 'alias ws="webstorm ."' >> ~/.zshrc
+grep -qxF 'alias dev="pnpm dev || yarn dev || npm run dev"' ~/.zshrc || echo 'alias dev="pnpm dev || yarn dev || npm run dev"' >> ~/.zshrc
 
-# Aliases
-alias ws="webstorm ."
-alias dev="pnpm dev || yarn dev || npm run dev"
-' >> ~/.zshrc
-
-# Apply .zshrc updates
+# Apply .zshrc changes
 source ~/.zshrc
 
 # UI Preferences
