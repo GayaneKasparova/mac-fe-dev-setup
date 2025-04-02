@@ -25,7 +25,6 @@ brew install --cask \
   fork \
   tableplus \
   responsively \
-  handmirror \
   microsoft-word \
   microsoft-excel \
   microsoft-outlook \
@@ -39,8 +38,6 @@ brew install --cask \
   docker
 
 # Global JS tooling
-pnpm create vite@latest
-pnpm dlx create-t3-app
 pnpm add -g \
   @angular/cli \
   graphql \
