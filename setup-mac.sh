@@ -86,4 +86,13 @@ echo "🖱️ Scrollbar preferences..."
 defaults write -g AppleShowScrollBars -string "WhenScrolling"
 defaults write -g AppleScrollerPagingBehavior -int 1
 
+# Finder preferences
+echo "🧭 Setting Finder preferences..."
+defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+killall Finder
+
 echo "✅ All done! Restart or log out/log in for some settings to fully apply 🚀"
