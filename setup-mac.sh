@@ -2,6 +2,14 @@
 
 echo "🛠 Setting up your Mac dev environment..."
 
+# Install Rosetta (required for Intel-based apps like LastPass)
+if /usr/bin/pgrep oahd >/dev/null 2>&1; then
+  echo "📦 Rosetta already installed."
+else
+  echo "📦 Installing Rosetta 2..."
+  /usr/sbin/softwareupdate --install-rosetta --agree-to-license
+fi
+
 # Install Homebrew
 if ! command -v brew &> /dev/null; then
   echo "🍺 Installing Homebrew..."
@@ -13,7 +21,7 @@ fi
 # Install core CLI tools
 brew install git node nvm yarn pnpm zsh gh pgcli
 
-# Install GUI apps
+# Install GUI apps (skip if already present)
 brew install --cask \
   webstorm \
   visual-studio-code \
@@ -30,11 +38,21 @@ brew install --cask \
   microsoft-outlook \
   microsoft-teams \
   whatsapp \
-  telegram\
+  telegram \
   spotify \
   shottr \
   slack \
   docker
+
+# Set PNPM global binary path
+echo '
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+' >> ~/.zshrc
+
+export PNPM_HOME="$HOME/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
 
 # Global JS tooling
 pnpm add -g \
@@ -58,6 +76,8 @@ export NVM_DIR="$HOME/.nvm"
 alias ws="webstorm ."
 alias dev="pnpm dev || yarn dev || npm run dev"
 ' >> ~/.zshrc
+
+# Apply .zshrc updates
 source ~/.zshrc
 
 # UI Preferences
