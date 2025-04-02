@@ -44,7 +44,6 @@ Optimized for **Apple Silicon** (M1–M4) and ideal for working with **React**, 
 - **Fork** – Git GUI client with a clean interface
 - **TablePlus** – Modern GUI for working with databases
 - **Responsively** – Preview websites across multiple devices
-- **HandMirror** – Quick camera check from the menu bar
 
 ### 🧰 Utilities & Workflow Enhancers
 - **Warp** – Modern, GPU-accelerated terminal
