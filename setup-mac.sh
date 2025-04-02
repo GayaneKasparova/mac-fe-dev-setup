@@ -30,6 +30,7 @@ brew install --cask \
   microsoft-outlook \
   microsoft-teams \
   whatsapp \
+  telegram\
   spotify \
   lastpass \
   shottr \
