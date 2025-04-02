@@ -88,7 +88,7 @@ alias dev="pnpm dev || yarn dev || npm run dev"
 
 1. Clone this repo
 ```bash
-git clone https://github.com/your-username/mac-dev-setup.git
+git clone https://github.com/GayaneKasparova/mac-fe-dev-setup.git
 cd mac-dev-setup
 ```
 2. Make the script executable
