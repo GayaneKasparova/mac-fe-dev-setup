@@ -28,13 +28,12 @@ brew install --cask \
   microsoft-word \
   microsoft-excel \
   microsoft-outlook \
-  telegram \
+  microsoft-teams \
   whatsapp \
   spotify \
   lastpass \
   shottr \
   slack \
-  microsoft-teams \
   docker
 
 # Global JS tooling
