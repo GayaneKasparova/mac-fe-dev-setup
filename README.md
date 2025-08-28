@@ -11,19 +11,24 @@ A polished script to set up your Mac (Apple Silicon) for full-stack development 
 - Git, Node.js (via NVM), Yarn, pnpm, Zsh
 - GitHub CLI (`gh`)
 - PostgreSQL CLI (`pgcli`)
+- Python 3.13
+- SQLite
 
 ### 🧰 Frontend & Full-stack Tooling
-- `create-t3-app`, `Vite`, `@angular/cli`, `plop`
+- `create-t3-app`, `vite`, `@angular/cli`, `plop`
 - `jest`, `playwright`, `msw`
 - `nodemon`, `ts-node`, `pm2`
 - `prisma` (ORM)
 - `graphql` (JS library)
+- `tailwindcss`, `sass`
 
 ### 💻 GUI Applications
 
 #### 🧑‍💻 Development & Design
 - WebStorm
 - Visual Studio Code
+- Cursor (AI-powered editor)
+- PyCharm CE
 - Figma
 - Postman
 - PixelSnap
@@ -44,8 +49,9 @@ A polished script to set up your Mac (Apple Silicon) for full-stack development 
 - Spotify
 - Microsoft Word, Excel, Outlook
 
-#### 🐳 DevOps
+#### 🐳 DevOps & AI
 - Docker Desktop
+- Ollama (local LLM runner)
 ---
 
 ## 🔧 System Tweaks

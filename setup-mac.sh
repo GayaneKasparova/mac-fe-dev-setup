@@ -11,12 +11,13 @@ if ! command -v brew &> /dev/null; then
 fi
 
 # Install core CLI tools
-brew install git node nvm yarn pnpm zsh gh pgcli
+brew install git node nvm yarn pnpm zsh gh pgcli python@3.13 sqlite
 
 # Install GUI apps
 brew install --cask \
   webstorm \
   visual-studio-code \
+  cursor \
   warp \
   rectangle \
   figma \
@@ -34,7 +35,9 @@ brew install --cask \
   spotify \
   shottr \
   slack \
-  docker
+  docker \
+  pycharm-ce \
+  ollama
 
 # Set PNPM global binary path in .zshrc if not already present
 grep -qxF 'export PNPM_HOME="$HOME/Library/pnpm"' ~/.zshrc || echo 'export PNPM_HOME="$HOME/Library/pnpm"' >> ~/.zshrc
@@ -46,14 +49,19 @@ export PATH="$PNPM_HOME:$PATH"
 # Install global JS tooling
 pnpm add -g \
   @angular/cli \
+  create-t3-app \
+  vite \
   graphql \
   jest \
   playwright \
+  msw \
   plop \
   nodemon \
   ts-node \
   pm2 \
-  prisma
+  prisma \
+  tailwindcss \
+  sass
 
 # Safely add NVM setup and aliases to .zshrc
 grep -qxF 'export NVM_DIR="$HOME/.nvm"' ~/.zshrc || echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
