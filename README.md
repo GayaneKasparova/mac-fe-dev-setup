@@ -13,15 +13,23 @@ A polished script to set up your Mac (Apple Silicon) for full-stack development 
 - PostgreSQL CLI (`pgcli`)
 - Python 3.13
 - SQLite
+- Redis
+- OpenJDK 11
 
 ### 🧰 Frontend & Full-stack Tooling
 - `create-t3-app`, `vite`, `@angular/cli`, `plop`
+- `@ngrx/cli`, `@angular-devkit/schematics-cli`
+- `@oracle/suitecloud-cli`
 - `jest`, `playwright`, `msw`
 - `nodemon`, `ts-node`, `pm2`
 - `prisma` (ORM)
 - `graphql` (JS library)
 - `tailwindcss`, `sass`
 - `gulp-cli`, `grunt-cli`, `webpack-cli`
+- `eslint`, `prettier`, `husky`
+- `lint-staged`, `commitizen`
+- `semantic-release`, `compodoc`
+- `lighthouse-ci`, `@storybook/cli`
 
 ### 💻 GUI Applications
 
@@ -32,10 +40,15 @@ A polished script to set up your Mac (Apple Silicon) for full-stack development 
 - PyCharm CE
 - Figma
 - Postman
+- Insomnia
 - PixelSnap
 - Fork
 - TablePlus
+- MongoDB Compass
+- Sequel Pro
 - Responsively
+- Proxyman
+- JSON Viewer
 
 #### 🧰 Utilities
 - Warp (terminal)
@@ -48,7 +61,7 @@ A polished script to set up your Mac (Apple Silicon) for full-stack development 
 - Telegram
 - WhatsApp
 - Spotify
-- Microsoft Word, Excel, Outlook
+- Microsoft Word, Excel, Outlook, OneDrive
 
 #### 🐳 DevOps & AI
 - Docker Desktop
@@ -64,6 +77,8 @@ A polished script to set up your Mac (Apple Silicon) for full-stack development 
 - Max tracking speed
 - Auto-hide dock & minimize to icon
 - Scrollbars: show on scroll + jump to clicked spot
+- Faster key repeat and delay
+- Disable press-and-hold for keys
 
 ### 🧭 Finder Preferences
 - Show hidden files
@@ -105,5 +120,9 @@ chmod +x setup-mac.sh
 
 ❤️ Customize & Contribute
 Fork it and adapt it to your workflow — or suggest improvements via pull request!
+
+## 📂 Development Directories
+
+The script creates the following directory structure:
 
 
