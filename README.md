@@ -21,6 +21,7 @@ A polished script to set up your Mac (Apple Silicon) for full-stack development 
 - `prisma` (ORM)
 - `graphql` (JS library)
 - `tailwindcss`, `sass`
+- `gulp-cli`, `grunt-cli`, `webpack-cli`
 
 ### 💻 GUI Applications
 
@@ -84,7 +85,7 @@ alias dev="pnpm dev || yarn dev || npm run dev"
 # 🚀 Getting Started
 1. Clone this repo
 ```bash
-git clone https://github.com/your-username/mac-dev-setup.git
+git clone https://github.com/username/setup-mac.git
 cd mac-dev-setup
 ```
 

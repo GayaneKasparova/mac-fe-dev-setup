@@ -61,7 +61,10 @@ pnpm add -g \
   pm2 \
   prisma \
   tailwindcss \
-  sass
+  sass \
+  gulp-cli \
+  grunt-cli \
+  webpack-cli
 
 # Safely add NVM setup and aliases to .zshrc
 grep -qxF 'export NVM_DIR="$HOME/.nvm"' ~/.zshrc || echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
