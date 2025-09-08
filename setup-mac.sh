@@ -39,7 +39,7 @@ brew install --cask \
   microsoft-excel \
   microsoft-outlook \
   microsoft-teams \
-  microsoft-onedrive \
+  onedrive \
   whatsapp \
   telegram \
   spotify \
